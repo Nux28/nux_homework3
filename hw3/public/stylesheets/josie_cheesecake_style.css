@@ -1,0 +1,40 @@
+/* JOSEPHINE NUXOLL */
+
+body {
+  background-color: #334080;
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-family: "Lucida Handwriting";
+}
+
+p {
+  color: white;
+  font-family: "Times New Roman";
+  font-size: 20px;
+}
+
+table {
+  background-color: #575f8a;
+}
+
+h3 {
+  font-family: "Apple Chancery";
+}
+
+.scrollable-div {
+  height: 100px;
+  width: 120px;
+  border: 1px solid black;
+  overflow-y: scroll;
+  scroll-padding-left: 100px;
+  margin: 0 70px;
+}
+
+span {
+  border: 1px solid black;
+  padding: 20px;
+background-color: #3285a8;
+}

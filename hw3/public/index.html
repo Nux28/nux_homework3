@@ -1,0 +1,84 @@
+<!-- JOSEPHINE NUXOLL -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="stylesheets/josie_cheesecake_style.css">
+<script
+ src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+</head>
+<body>
+
+<h1>Cheesecake Order Form</h1>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" alt="cheesecake" width="150" height="150">
+
+<!-- div tag used to isolate content which is hidden once order is placed -->
+
+<div id="hide">
+
+<p>Quantity Topping</p>
+
+<!--Radio buttons and drop down select-->
+<table>
+<tr><td>
+<select id="quantity" name="quantity">
+  <option value="3">3</option>
+  <option value="2">2</option>
+  <option value="1">1</option>
+</select>
+</td>
+<td>
+  <input type="radio" name="topping" value="plain" >Plain</input>
+  <br>
+  <input type="radio" name="topping" value="cherry" >Cherry</input>
+  <br>
+  <input type="radio" name="topping" value="chocolate" >Chocolate</input>
+</td></tr></table>
+<br>
+
+<!--User input text box-->
+<h4>Notes:</h4>
+<textarea id="notes" name="notes" rows="5" cols="50" placeholder="Enter any special instructions here"></textarea>
+<br>
+
+<button>Order</button>
+
+</div>
+
+<table id="dropdown">
+<h3 id="month">Orders for <span id='selected-month'>Jan</span></h3>
+<div id="dropdown" class="scrollable-div">
+<ul style="list-style-type: none;" id='selectable-months'>
+ <p id='jan' value='Jan'>Jan</p>
+ <p id='feb'>Feb</p>
+ <p id='mar'>Mar</p>
+ <p id='apr'>Apr</p>
+ <p id='may'>May</p>
+ <p id='jun'>Jun</p>
+ <p id='jul'>Jul</p>
+ <p id='aug'>Aug</p>
+ <p id='sep'>Sep</p>
+ <p id='oct'>Oct</p>
+ <p id='nov'>Nov</p>
+ <p id='dec'>Dec</p>
+</ul>
+</div>
+</table>
+
+<ul>
+   <li>11 cherry</li>
+   <li>17 chocolate</li>
+   <li>31 plain</li>
+</ul>
+
+</body>
+
+<!-- Javascript -->
+
+<script src="javascripts/ordercheesecake.js"></script>
+
+<script src="javascripts/monthselect.js"></script>
+
+</html>
